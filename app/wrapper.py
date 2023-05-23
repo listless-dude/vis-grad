@@ -3,6 +3,7 @@ import numpy as np
 class Tensor:
     def __init__(self, data, _children=(), _operation=''):
         self.data = np.array(data)
+        self.grad = 0.0
         self.prev = set(_children)
         self.op = _operation
 
