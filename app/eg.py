@@ -7,5 +7,4 @@ c = w.Tensor([[1,1]])
 
 d = a*b + c
 print(d)
-doctest_
-print(g.draw_dot(d))
+g.draw_dot(d)
